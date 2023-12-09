@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+   <children>
+      <ImageView fitHeight="810.0" fitWidth="360.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Image/background1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Character" fitHeight="55.0" fitWidth="60.0" layoutX="20.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/download__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="Rect_1" arcHeight="5.0" arcWidth="5.0" fill="#151b20" height="343.0" layoutX="22.0" layoutY="467.0" stroke="#101010" strokeType="INSIDE" width="50.0" />
+      <Rectangle fx:id="Rect_2" arcHeight="5.0" arcWidth="5.0" fill="#151b20" height="343.0" layoutX="235.0" layoutY="467.0" stroke="#101010" strokeType="INSIDE" width="50.0" />
+      <Button layoutX="146.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="0" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f4f4f4" height="55.0" layoutX="184.0" layoutY="22.0" stroke="WHITE" strokeType="INSIDE" width="124.0" />
+      <ImageView fitHeight="55.0" fitWidth="79.0" layoutX="187.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/cherry-removebg.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="260.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="69">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="48.0" fitWidth="99.0" layoutX="35.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/playpng.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="34.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToscene5" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: transparent;" />
+      <Rectangle fx:id="Stick" arcHeight="3.0" arcWidth="3.0" fill="#1e1e1e" height="80.0" layoutX="59.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="6.0" />
+      <Button id="increasebutton" fx:id="increasebutton" layoutX="93.0" layoutY="411.0" mnemonicParsing="false" onKeyPressed="#increaselength" prefHeight="94.0" prefWidth="165.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>
